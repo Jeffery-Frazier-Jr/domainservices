@@ -1,0 +1,5 @@
+users:
+  admin:
+    password: "$2y$05$mXtO6nMWRqnzOpOIA9osX.dDG5FxXPnMqyDsQq2Vbs0PtiuMIX9oC"
+    displayname: "Admin"
+    email: admin@example.com

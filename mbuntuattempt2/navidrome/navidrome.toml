@@ -1,0 +1,5 @@
+MusicFolder = "../music"
+DataFolder = "./data"
+Port = 4533
+LogLevel = "DEBUG"
+EnableAuthentication = false

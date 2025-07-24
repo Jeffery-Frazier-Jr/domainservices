@@ -1,0 +1,37 @@
+server:
+  address: tcp://0.0.0.0:9091
+
+log:
+  level: debug
+
+authentication_backend:
+  file:
+    path: ./users_database.yml
+
+access_control:
+  default_policy: deny
+  rules:
+    - domain: navidrome.localhost
+      policy: one_factor
+
+session:
+  name: authelia_session
+  secret: gIh7qf5iPe6Z35wprH1mkiJB5spukzYsH0Gtyf+jOqw=
+  expiration: 3600
+  inactivity: 300
+  cookies:
+    - domain: localhost.localdomain
+      authelia_url: https://auth.localhost.localdomain
+
+identity_validation:
+  reset_password:
+    jwt_secret: xkZuOv+m+vHbSTKIaLN8mXQPuRCDfxJOugDW5hyY33M=
+
+storage:
+  local:
+    path: ./db.sqlite3
+  encryption_key: vfAFfDcR+DmSP1JmnCR6mdiZdLdRqDl+4y9hDLT+r8k=
+
+notifier:
+  filesystem:
+    filename: ./notification.txt
