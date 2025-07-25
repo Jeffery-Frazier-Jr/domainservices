@@ -19,13 +19,13 @@ Start each component in separate terminals:
 ```bash
 # Authelia
 cd mbuntuattempt2/authelia
-authelia --config config.yml
+./authelia --config config.yml
 ```
 
 ```bash
 # Navidrome
 cd mbuntuattempt2/navidrome
-navidrome --config navidrome.toml
+./navidrome --configfile navidrome.toml
 ```
 
 ```bash
