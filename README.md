@@ -31,6 +31,11 @@ navidrome --config navidrome.toml
 ```bash
 # nginx (run from repo root)
 nginx -p $(pwd)/mbuntuattempt2/nginx -c nginx.conf
+or
+nginx -p $(pwd)/mbuntuattempt2/nginx -c nginx.conf -t
 ```
+
+`navidrome.conf` includes the file `authelia-forward.inc` which defines the
+forward-auth locations used to check authentication with Authelia.
 
 Then access `https://music.localhost.localdomain` in a browser that trusts `mbuntuattempt2/certs/ca.crt`.
