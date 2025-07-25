@@ -11,7 +11,7 @@ authentication_backend:
 access_control:
   default_policy: deny
   rules:
-    - domain: navidrome.localhost
+    - domain: music.localhost.localdomain
       policy: one_factor
 
 session:
