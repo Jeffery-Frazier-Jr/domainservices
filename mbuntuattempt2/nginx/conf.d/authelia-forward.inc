@@ -2,7 +2,7 @@ auth_request /authelia;
 
 location = /authelia {
     internal;
-    proxy_pass http://localhost:9091/api/verify;
+    proxy_pass https://localhost:9091/api/verify;
     proxy_pass_request_body off;
     proxy_set_header Content-Length "";
     proxy_set_header X-Original-URL $scheme://$host$request_uri;

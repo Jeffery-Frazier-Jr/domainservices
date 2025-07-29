@@ -1,5 +1,8 @@
 server:
   address: tcp://0.0.0.0:9091
+  tls:
+    certificate: ../certs/server.crt
+    key: ../certs/server.key
 
 log:
   level: debug
